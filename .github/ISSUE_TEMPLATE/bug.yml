@@ -4,7 +4,7 @@ title: "[BUG] "
 labels:
   - bug
 projects:
-  - "gbrielmartinssreo/8"
+  - "gbrielmartinssreo/platform-jjk-rpg"
 
 body:
   - type: textarea
