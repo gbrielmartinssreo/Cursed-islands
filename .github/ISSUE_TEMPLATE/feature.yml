@@ -1,0 +1,65 @@
+name: "Feature"
+description: "Criar ou evoluir uma funcionalidade do jogo"
+title: "[FEATURE] "
+labels:
+  - feature
+projects:
+  - "gbrielmartinssreo/8"
+
+body:
+  - type: textarea
+    id: contexto
+    attributes:
+      label: "Contexto"
+      description: "Por que essa funcionalidade deve existir?"
+      placeholder: "Descreva o contexto..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: "Objetivo"
+      description: "O que deve ser implementado?"
+      placeholder: "Descreva a funcionalidade..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: comportamento
+    attributes:
+      label: "Comportamento esperado"
+      description: "Como a funcionalidade deve funcionar durante o jogo?"
+      placeholder: "Descreva o comportamento esperado..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: criterios
+    attributes:
+      label: "Critérios de aceite"
+      description: "Liste as condições necessárias para considerar a feature concluída."
+      placeholder: |
+        - [ ] O jogador consegue ...
+        - [ ] A mecânica responde a ...
+        - [ ] Não interfere em ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: casos-especiais
+    attributes:
+      label: "Casos especiais"
+      description: "Situações específicas ou comportamentos de borda."
+      placeholder: "Liste casos especiais, se existirem..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: notas-tecnicas
+    attributes:
+      label: "Notas técnicas"
+      description: "Arquivos, módulos, decisões ou dependências envolvidas."
+      placeholder: "Adicione notas técnicas..."
+    validations:
+      required: false

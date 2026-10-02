@@ -1,0 +1,81 @@
+name: "Bug"
+description: "Reportar um problema ou comportamento inesperado"
+title: "[BUG] "
+labels:
+  - bug
+projects:
+  - "gbrielmartinssreo/8"
+
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: "Problema"
+      description: "Descreva de forma objetiva o que está acontecendo."
+      placeholder: "Explique o problema..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: comportamento-atual
+    attributes:
+      label: "Comportamento atual"
+      description: "O que acontece atualmente?"
+      placeholder: "Descreva o comportamento observado..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: comportamento-esperado
+    attributes:
+      label: "Comportamento esperado"
+      description: "O que deveria acontecer?"
+      placeholder: "Descreva o comportamento esperado..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: "Como reproduzir"
+      description: "Liste os passos necessários para reproduzir o problema."
+      placeholder: |
+        1. Inicie o jogo
+        2. Faça ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequencia
+    attributes:
+      label: "Frequência"
+      options:
+        - Sempre
+        - Frequente
+        - Ocasional
+        - Raro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severidade
+    attributes:
+      label: "Severidade"
+      options:
+        - Bloqueador
+        - Alta
+        - Média
+        - Baixa
+        - Apenas visual
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: "Evidências"
+      description: "Adicione logs, prints, vídeos ou mensagens de erro."
+      placeholder: "Cole ou anexe evidências, se houver..."
+    validations:
+      required: false

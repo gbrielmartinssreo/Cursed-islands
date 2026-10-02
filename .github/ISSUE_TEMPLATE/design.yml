@@ -1,0 +1,79 @@
+name: "Design"
+description: "Registrar uma ideia ou decisão de game design"
+title: "[DESIGN] "
+labels:
+  - design
+projects:
+  - "gbrielmartinssreo/8"
+
+body:
+  - type: textarea
+    id: ideia
+    attributes:
+      label: "Ideia"
+      description: "Descreva a ideia de forma curta e objetiva."
+      placeholder: "Descreva a ideia..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: "Objetivo"
+      description: "Que problema essa ideia resolve ou o que ela adiciona ao jogo?"
+      placeholder: "Explique o propósito da ideia..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: experiencia
+    attributes:
+      label: "Experiência desejada"
+      description: "O que o jogador deve sentir, perceber ou fazer?"
+      placeholder: "Descreva a experiência desejada..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: exemplo
+    attributes:
+      label: "Exemplo em jogo"
+      description: "Descreva uma situação concreta em que essa ideia apareceria."
+      placeholder: "Exemplo..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: impacto
+    attributes:
+      label: "Áreas afetadas"
+      options:
+        - label: Gameplay
+        - label: Progressão
+        - label: Interface
+        - label: Narrativa
+        - label: Áudio
+        - label: Arte
+        - label: Balanceamento
+
+  - type: textarea
+    id: riscos
+    attributes:
+      label: "Riscos e dúvidas"
+      description: "Problemas, limitações ou questões ainda não resolvidas."
+      placeholder: "Liste os riscos ou dúvidas..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: decisao
+    attributes:
+      label: "Status da ideia"
+      options:
+        - Em avaliação
+        - Testar em protótipo
+        - Aprovada
+        - Precisa de refinamento
+        - Descartada
+    validations:
+      required: true
