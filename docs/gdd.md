@@ -2,161 +2,100 @@
 
 ## 1. Visão geral
 
-### Nome provisório
-Cursed Islands: Bournes
+**Nome:** Cursed Islands: Bournes
 
-### Pitch
-Explique o jogo em 1 ou 2 frases.
+**Gênero:** Metroidvania de ação 2D
 
-> Jogo beat-up sobre derrotar maldições em ilhas diversas
+**Plataforma:** PC
 
-### Gênero
-- Beat-up
+**Tecnologia:** Lua + LÖVE2D
 
-### Plataforma
-- PC
+**Pitch:** Victor Bournes explora ilhas amaldiçoadas, enfrenta criaturas sobrenaturais e desenvolve suas habilidades para superar desafios e descobrir novas áreas.
 
-### Tecnologia
-- Lua
-- LÖVE2D
+## 2. Conceito e identidade
 
----
-
-## 2. Conceito principal
-
-### Fantasia do jogador
-Quem ou o que o jogador controla?
-Controla Victor Bournes um personagem que deve lutar contra maldições com habilidades especiais.
-
-O que ele deve sentir que está fazendo?
-Sentir-se um personagem poderoso com dever de defender as pessoas de maldições.
-
-### Diferencial
-O que faz esse jogo ter alguma identidade própria?
-A identidade do jogo está relacionada a uma campanha de rpg, aqueles que se interessarem por ela vão se sentir como personagens do jogo.
+O jogo adapta elementos de uma campanha de RPG para um metroidvania de ação, permitindo que jogadores familiarizados com a campanha reconheçam seus personagens e seu universo.
 
 ### Pilares de design
-Defina de 2 a 4 princípios que devem orientar o projeto.
 
-- controles simples;
-- feedback claro;
-- variedade de monstros;
-- cenários que se esticam.
+- **Combate responsivo:** controles simples e ataques com impacto.
+- **Exploração:** mapas interconectados, segredos e caminhos alternativos.
+- **Progressão:** habilidades que ampliam as possibilidades de combate e exploração.
+- **Identidade sobrenatural:** técnicas e maldições com características próprias.
 
----
+## 3. Gameplay
 
-## 3. Core loop
+O jogador explora ambientes em perspectiva lateral, enfrenta inimigos, descobre habilidades e acessa áreas anteriormente inacessíveis.
 
-Descreva o ciclo principal do jogo.
+### Movimentação e combate
 
-Exemplo:
+- Movimentação lateral, pulo e interação com plataformas.
+- Ataques básicos e habilidades sobrenaturais.
+- Esquiva ou outra mecânica defensiva, ainda a definir.
+- Inimigos com comportamentos distintos e confrontos especiais.
 
-1. entrar na área;
-2. enfrentar inimigos;
-3. derrota boss;
-4. desbloquea habilidades ou melhora atributos;
-5. enfrentar desafios mais difíceis;
-6. repetir.
+### Habilidade de Victor
 
-### Loop resumido
+Victor possui uma habilidade sobrenatural relacionada à atração de objetos e à perfuração de inimigos. Essa técnica será explorada como elemento central do combate, podendo também interagir com o ambiente.
 
-> O jogador faz enfrenta os monstros para conseguir ficar mais forte, permitindo derrotar monstros mais fortes.
+Os detalhes de funcionamento, limitações e evolução serão definidos durante o desenvolvimento.
 
----
+## 4. Progressão
 
-## 4. Objetivo
+A progressão combina exploração e evolução do personagem.
 
-### Objetivo principal
-O que o jogador está tentando alcançar?
-Mitigar o número de monstros
+Possibilidades previstas:
 
-### Condição de vitória
-- Derrotar monstros enfrentando-os até que eles desapareçam
-- Resistir ondas até chegarem reforços
+- Melhorias de atributos.
+- Novas técnicas e habilidades.
+- Acesso a áreas antes inacessíveis.
+- Atalhos, segredos e confrontos mais desafiadores.
 
-### Condição de derrota
-- Vida chega a zero
-- Inimigos fogem
+O sistema definitivo de progressão ainda será definido.
 
----
+## 5. Universo e ambientação
 
-## 5. Jogador
+O jogo se passa no universo de uma campanha de RPG protagonizada por Victor Bournes, em um mundo marcado por maldições e habilidades sobrenaturais.
 
-### Movimentação
-Como o personagem se move?
-Com teclado wasd
+A ambientação é sombria e sobrenatural, com ênfase em confrontos perigosos e criaturas de naturezas distintas.
 
-### Controles
+### Referências: Jujutsu Kaisen
 
-| Ação | Controle |
-|---|---|
-| Mover | WASD |
-| Ação principal | j |
-| Ação secundária | k |
-| Pausar | Esc |
+O universo poderá incorporar conceitos específicos de *Jujutsu Kaisen* como referências para a construção das mecânicas e da ambientação:
 
-### Atributos
-- Vida
-- Velocidade
-- Dano
-- Energia
+- **Técnicas inatas:** habilidades particulares de personagens.
+- **Expansões de domínio:** técnicas especiais que alteram as condições de combate.
+- **Votos de restrição:** trocas entre limitações e vantagens.
+- **Graus de feiticeiros e maldições:** classificações que ajudam a representar níveis de ameaça.
 
----
+Esses conceitos deverão ser adaptados às necessidades do jogo e ao universo original da campanha.
 
-## 6. Mecânicas
+### Direção artística
 
-### Mecânica principal
-Poderzin de atrair objetos nos inimigos e gerar perfuração, a ult.
+Pixel art 2D com perspectiva lateral é a direção inicial considerada. A estética deverá transmitir o caráter sobrenatural do mundo, com personagens reconhecíveis, maldições distintas e efeitos visuais legíveis.
 
-### Defesa
-Como o jogador evita ou reduz dano?
-Aperta a tecla de movimento oposta a direção do inimigo para evitar ou reduzir dano.
+O estilo definitivo ainda será escolhido.
 
-### Feedback
-Como o jogador percebe:
+## 6. Escopo do protótipo
 
-- que atacou: animação de ataque;
-- que acertou: animação de acerto;
-- que tomou dano: animação de dano;
-- que derrotou algo: inimigo some.
+O primeiro protótipo deverá validar as mecânicas fundamentais antes da expansão do conteúdo.
 
----
+**Prioridades:**
 
-## 7. Progressão
+1. Movimentação, pulo, gravidade e colisões.
+2. Uma sala jogável com plataformas.
+3. Ataque básico e um inimigo.
+4. Implementação inicial da habilidade de Victor.
+5. Sprites provisórios e feedback visual.
+6. Pequena sequência de salas conectadas.
 
-### Durante a partida
-Como o jogador fica mais forte?
+**Critério de sucesso:** demonstrar que movimentação, combate e exploração funcionam juntos em uma experiência curta e divertida.
 
-- upgrade de atributos
-- skins
+## 7. Questões em aberto
 
----
-
-## 8. Ambientação
-
-### Tom
-- [ ] Leve
-- [x] Sombrio
-- [ ] Cômico
-- [ ] Absurdo
-- [ ] Misterioso
-- [ ] Outro
-
----
-
-## 9. Interface
-
-### HUD
-Elementos exibidos durante o jogo:
-
-- vida;
-- pontuação;
-- recursos;
-- cooldowns;
-- outros.
-
-### Menus
-- menu principal;
-- pause;
-- game over;
-- opções.
+- Qual é o objetivo narrativo da campanha do jogo?
+- Como as ilhas e suas áreas serão conectadas?
+- Como funcionarão as técnicas, expansões de domínio e votos de restrição?
+- Quais habilidades Victor poderá desbloquear?
+- Qual será o estilo visual definitivo?
+- Como funcionarão os pontos de controle e a derrota?
